@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Caudex', serif;
+    margin: 0;
+    background-color: rgb(200, 200, 200);
+}
+
+.container {
+    width: 920px;
+    margin: auto;
+}
+
+.container section {
+    margin-bottom: 60px;
+}
+
+.page-title {
+    background-color: #5c064e;
+    padding: 25px;
+    margin: 0;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.sec-1 img {
+    width: 100%;
+}
+
+.sec-1 p {
+    padding: 25px 25px 0;
+    letter-spacing: 1px;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.row {
+    display: flex;
+    box-shadow: rgba(138, 131, 124, 0.23) -11.31px 11.31px 17px 0px;
+}
+
+.col-70 {
+    width: 70%;
+}
+
+.col-30 {
+    width: 28%;
+}
+
+.img-wrapper {
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+.section-heading {
+    margin: 0;
+    background: #5c064e;
+    padding: 25px;
+    color: white;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.section-body {
+    padding: 35px 30px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    margin: 0;
+    font-size: 18px;
+}
+
+.bg-white {
+    background: white;
+}
+
+.img-1 {
+    background: url('../assets/images/laser-therapy.jpg');
+}
+
+.img-2 {
+    background: url('../assets/images/cryolipolysis.jpg');
+}
+
+.m-0 {
+    margin: 0;
+}
+
+figcaption {
+    text-align: center;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .row {
+        display: block;
+    }
+
+    .col-30, .col-70 {
+        width: 100%;
+    }
+
+    .col-30 {
+        height: 300px;
+    }
+}
