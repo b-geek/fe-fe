@@ -15,6 +15,7 @@ body {
 
 .banner {
     display: table;
+    width: 100%;
 }
 
 .container section, .banner {
