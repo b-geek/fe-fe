@@ -1,0 +1,243 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caudex&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./_links/consultation.css">
+    <link rel="stylesheet" href="./_links/header.css">
+    <link rel="stylesheet" href="./_links/footer.css">
+    <link rel="shortcut icon" href="./assets/body-contouring.png" type="image/x-icon">
+
+    <title>Fe-Fe</title>
+    <!-- By Felisicia Mobley 08/01/2021 Week 4 CIS373018VA016-->
+
+    <script>
+        function formSubmit() {
+            alert('Information send!')
+        }
+    </script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="logo">
+            <h1>
+                <a href="index.html">Bodied by Fe-Fe</a>
+            </h1>
+        </div>
+        <div class="nav">
+            <ul>
+                <li id="home">
+                    <a href="index.html">Home</a>
+                </li>
+                <li id="about">
+                    <!-- <a href="about.html">About</a> -->
+                    <a href="#">About</a>
+                </li>
+                <li id="services">
+                    <a href="services.html">Services</a>
+                </li>
+                <li id="consultation">
+                    <a href="consultation.html">Consultation</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="main">
+        <h2 class="page-title">Consultation</h2>
+        <div class="container">
+            <h2 class="form-heading">Client Intake Form</h2>
+            <form onsubmit="formSubmit();">
+                <fieldset>
+                    <legend>Patient information</legend>
+                    <div class="field-wrapper">
+                        <div class="label">
+                            <label for="name">Name <span>*</span></label>
+                        </div>
+                        <div class="row">
+                            <input type="text" placeholder="First Name" class="col-2" required>
+                            <input type="text" placeholder="Last Name" class="col-2" required>
+                        </div>
+                    </div>
+
+                    <div class="field-wrapper">
+                        <div class="label">
+                            <label for="gender">Gender </label>
+                        </div>
+
+                        <div class="row space-evenly">
+                            <div class="col">
+                                <input type="radio" name="gender" id="male" value="male">
+                                <label for="male">Male</label>
+                            </div>
+                            <div class="col">
+                                <input type="radio" name="gender" id="female" value="female">
+                                <label for="female">Female</label>
+                            </div>
+                            <div class="col">
+                                <input type="radio" name="gender" id="other" value="other">
+                                <label for="other">Other</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="field-wrapper">
+                        <div class="row">
+                            <div class="col-2">
+                                <div class="label">
+                                    <label for="age">Age <span>*</span></label>
+                                </div>
+                                <div>
+                                    <input type="text" name="age" id="age" placeholder="18+" required>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="label">
+                                    <label for="phn">Phone Number <span>*</span></label>
+                                </div>
+                                <div>
+                                    <input type="text" name="phone" id="phone" maxlength="10" placeholder="1234567890" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="field-wrapper">
+                        <div class="row">
+                            <div class="col-2">
+                                <div class="label">
+                                    <label for="contact-person">Emergerncy contact person <span>*</span></label>
+                                </div>
+                                <div>
+                                    <input type="text" placeholder="Full Name" required>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="label">
+                                    <label for="contact-person-number">Emergerncy contact person number
+                                        <span>*</span></label>
+                                </div>
+                                <div>
+                                    <input type="text" name="phone" id="phone" maxlength="10" placeholder="1234567890" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="field-wrapper">
+                        <div class="label">
+                            <label for="hear-about-us">How did you hear about us?</label>
+                        </div>
+                        <div class="row">
+                            <select name="media" id="media-option" class="col-2">
+                                <option value="">Choose an option</option>
+                                <option value="facebook">Facebook</option>
+                                <option value="instagram">Instagram</option>
+                                <option value="youtube">YouTube</option>
+                                <option value="onlineads">Online Ads</option>
+                                <option value="twitter">Twitter</option>
+                                <option value="referral">Referral</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Medical Condition</legend>
+                    <div class="field-wrapper">
+                        <p>Do you have any of the following?</p>
+                        <div class="label">
+                            <input type="checkbox" name="surgery" id="surgery">
+                            <label for="surgery">any surgeries in last 6 months</label>
+                        </div>
+
+                        <div class="label">
+                            <input type="checkbox" name="current-pregnant" id="current-pregnant">
+                            <label for="current-pregnant">currently pregnant</label>
+                        </div>
+
+                        <div class="label">
+                            <input type="checkbox" name="liver-disease" id="liver-disease">
+                            <label for="liver-disease">liver disease</label>
+                        </div>
+
+                        <div class="label">
+                            <input type="checkbox" name="cancer" id="cancer">
+                            <label for="cancer">cancer</label>
+                        </div>
+
+                        <div class="label">
+                            <input type="checkbox" name="skin-disease" id="skin-disease">
+                            <label for="skin-disease">skin disease</label>
+                        </div>
+
+                        <div class="label">
+                            <input type="checkbox" name="undergoing-hormonal-therapy" id="undergoing-hormonal-therapy">
+                            <label for="undergoing-hormonal-therapy">undergoing hormonal therapy</label>
+                        </div>
+                    </div>
+
+                    <div class="field-wrapper">
+                        <div class="label">
+                            <label for="current-medication">Are you currently under any medication? If yes, please
+                                specify</label>
+                        </div>
+                        <textarea name="medication" id="medication" rows="10" style="resize:none"></textarea>
+                    </div>
+                    
+                    <div class="field-wrapper">
+                        <div class="label">
+                            <label for="current-medication">Do you have any allergies? If yes, please specify</label>
+                        </div>
+                        <textarea name="allergies" id="allergies" rows="10" style="resize:none"></textarea>
+                    </div>
+                    
+                </fieldset>
+                <div class="row justify-center">
+                    <input type="submit" value="Submit">
+                </div>
+                
+            </form>
+        </div>
+        <div id="footer">
+            <div class="footer-wrapper">
+                <div class="mail">
+                    <h3>Write</h3>
+                    <a href="mailto:felisiciaf@yahoo.com">felisiciaf@yahoo.com</a>
+                </div>
+                <div class="social">
+                    <h3>Follow</h3>
+                    <ul>
+                        <li>
+                            <a href="#" target="_blank">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

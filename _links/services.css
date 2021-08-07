@@ -109,4 +109,8 @@ figcaption {
     .col-30 {
         height: 300px;
     }
+
+    * {
+        text-align: center;
+    }
 }

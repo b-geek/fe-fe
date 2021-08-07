@@ -37,7 +37,7 @@ body {
 
 .body-contouring {
     display: flex;
-    box-shadow: rgba(138, 131, 124, 0.23) -11.31px 11.31px 17px 0px;;
+    box-shadow: rgba(138, 131, 124, 0.23) -11.31px 11.31px 17px 0px;
 }
 
 .body-contouring .img-wrapper {
@@ -98,5 +98,9 @@ body {
     .body-contouring .img-wrapper {
         width: 100%;
         height: 300px;
+    }
+
+    * {
+        text-align: center;
     }
 }

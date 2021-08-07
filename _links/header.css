@@ -15,6 +15,10 @@ a {
     color: #5c064e !important;
 }
 
+#header ul a:hover {
+    border-bottom: 1px double;
+}
+
 #header h1 {
     margin: 0;
     letter-spacing: 2px;
@@ -42,7 +46,7 @@ a {
 }
 
 @media only screen and (max-width: 600px) {
-    * {
+    #header * {
         text-align: center;
     }
 
@@ -52,5 +56,9 @@ a {
 
     #header ul {
         letter-spacing: 0;
+    }
+
+    #header ul li {
+        margin-right: 10px;
     }
 }
